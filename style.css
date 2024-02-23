@@ -8,7 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #080808;
+    background: #000000;
     color: #fff;
 }
 #header{
@@ -21,6 +21,7 @@ body{
 }
 .container{
     padding: 10px 10%;
+    background-image: url(images/container-background.jpg);
 }
 
 nav{
@@ -311,7 +312,7 @@ form .btn2{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #262626;
+    background: #000000;
     font-weight: 300;
     margin-top: 20px;
 }
