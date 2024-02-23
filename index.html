@@ -210,6 +210,36 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        const header = document.getElementById('header');
+        const videoSource = 'images/starry.mp4'; // Path to your video file
+    
+        // Create video element
+        const video = document.createElement('video');
+        video.autoplay = true;
+        video.muted = true;
+        video.loop = true;
+        video.id = 'header-video';
+    
+        // Create source element and set attributes
+        const source = document.createElement('source');
+        source.src = videoSource;
+        source.type = 'video/mp4';
+    
+        // Append source to video element
+        video.appendChild(source);
+    
+        // Append video to header
+        header.appendChild(video);
+    
+        // Set video styles
+        video.style.width = '100%';
+        video.style.height = '100%';
+    });
+</script>    
+
 </body>
 </html>
 <!-- using google sheet apps-script. -->
